@@ -380,7 +380,7 @@ footer .metaline a{color:var(--text-link)}
 #professor .stats div span{font-size:var(--fs-body-sm)}
 .hero-photo .foto img{object-position:50% 20%}
 #professor .foto img{object-position:50% 30%}
-.pac-photo img{object-position:50% 50%}
+.pac-photo img{object-position:50% 40%}
 .myths{display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-7)}
 .myths span{font-family:var(--font-display);font-size:clamp(20px,2.4vw,26px);color:var(--c-ink-500);background:var(--surface-card);box-shadow:var(--shadow-xs);border-radius:var(--radius-pill);padding:10px 22px;text-decoration:line-through;text-decoration-color:var(--c-clay-600);text-decoration-thickness:2px}
 .mods.four{grid-template-columns:1fr}
@@ -1324,7 +1324,11 @@ const CURSO_DA_PAGINA = "Mobilização Neural";
 /* ================== FOTOS ==================
    Coloque as fotos na pasta "fotos" e escreva o nome do arquivo no código da foto. */
 const FOTOS = {
-  "MN-07": {arquivo:"mn-07-professor.jpg", legenda:""}
+  "MN-01": {arquivo:"MN-01.jpg", legenda:""},
+  "MN-04": {arquivo:"MN-04.jpg", legenda:""},
+  "MN-05": {arquivo:"MN-05.webp", legenda:""},
+  "MN-07": {arquivo:"mn-07-professor.jpg", legenda:""},
+  "MN-08": {arquivo:"MN-08.jpeg", legenda:""}
 };
 
 /* ================== FOTOS DAS TURMAS (carrossel) ==================
@@ -1332,6 +1336,7 @@ const FOTOS = {
    Ex. {arquivo:"turma-1.jpg"}
    Use só fotos com autorização dos alunos. Lista vazia = no site a seção não aparece. */
 const TURMAS = [
+  {arquivo:"mn-t1.jpeg"}
 ];
 /* No site publicado (github.io) os espaços sem foto somem. Na prévia aparecem os quadros com o código */
 const AO_VIVO = /github\.io$/.test(location.hostname);
