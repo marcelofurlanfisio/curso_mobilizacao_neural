@@ -140,6 +140,9 @@ strong{color:var(--text-heading);font-weight:600}
 .hero-photo .tag b{display:block;font-family:var(--font-display);font-size:28px;font-weight:600;color:var(--text-heading);line-height:1}
 .hero-photo .tag span{display:block;font-size:var(--fs-label);color:var(--text-body);margin-top:4px;line-height:1.35}
 @media (max-width:560px){.hero-photo .tag{right:8px;bottom:12px;padding:var(--sp-3) var(--sp-4)}}
+/* Na Mobilização Neural a etiqueta "16 horas" fica no canto de cima, para não cobrir a técnica da foto */
+.hero-photo .tag{top:24px;bottom:auto}
+.foto[data-foto="MN-06"] img{object-position:50% 45%}
 
 /* Faixa de fatos */
 .facts{border-top:var(--bw-hairline) solid var(--border-hairline);border-bottom:var(--bw-hairline) solid var(--border-hairline);background:var(--surface-subtle)}
@@ -1327,6 +1330,7 @@ const FOTOS = {
   "MN-01": {arquivo:"MN-01.jpg", legenda:""},
   "MN-04": {arquivo:"MN-04.jpg", legenda:""},
   "MN-05": {arquivo:"MN-05.webp", legenda:""},
+  "MN-06": {arquivo:"MN-06.jpg", legenda:""},
   "MN-07": {arquivo:"mn-07-professor.jpg", legenda:""},
   "MN-08": {arquivo:"MN-08.jpeg", legenda:""}
 };
